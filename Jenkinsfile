@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'Comienza la instalación'
+        echo 'Comienza la instalaciÃ³n'
+        sh 'git checkout answer3'
         sh '''mvn clean install -Dlicense.skip=true
 
 '''
